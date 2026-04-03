@@ -40,27 +40,22 @@ public class Main {
             if (choice == 1) {
                 System.out.println(service.getLatestNews());
             }
-
             else if (choice == 2) {
                 System.out.print("Keyword: ");
                 String key = sc.nextLine();
                 System.out.println(service.searchNews(key));
             }
-
             else if (choice == 3) {
                 System.out.print("Category: ");
                 String cat = sc.nextLine();
                 System.out.println(service.getByCategory(cat));
             }
-
             else if (choice == 4) {
                 System.out.print("Date (YYYY-MM-DD): ");
                 LocalDate date = LocalDate.parse(sc.nextLine());
                 System.out.println(service.getByDate(date));
             }
-
             else if (choice == 5) {
-
                 try {
                     System.out.print("Title: ");
                     String title = sc.nextLine();
@@ -82,7 +77,6 @@ public class Main {
                     System.out.println("Error: " + e.getMessage());
                 }
             }
-
             else if (choice == 6) {
                 System.out.print("ID: ");
                 int id = sc.nextInt();
